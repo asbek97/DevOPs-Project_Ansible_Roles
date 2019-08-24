@@ -6,5 +6,4 @@
     state: present
     ports:
      - "3306:3306" 
-#  with_indexed_items:
-#   - "{{ images }}"
+

@@ -1,0 +1,8 @@
+---
+- name: Moving the war file from the nexus repository to tomcat/webapps
+  vars:
+      - warfile_url: 'http://172.31.12.84:9030/nexus/content/repositories/test123/nexus/happytrip/prabhav-1/${{ BUILD_NUMBER }}/prabhav-1.war'
+  get_url:
+    url: {{ warfile_url }}
+    dest: /home/usr/tomcat-bind
+    mode: '0755'

@@ -5,20 +5,8 @@
           name: docker
           state: restarted
 
-- name: delete tomcat docker container
-  docker_container:
-    name: "tomcat7"
-    state: stopped
-  notify: kill timcat container
- 
-- name: kill tomcat container
-  docker_container:
-     name: "tomcat7"
-     state: absent
-     force_kill: yes
+- name: create tomcat 
+  debug:
+     msg: 'true'
+  listen: "tomcat"
 
-- name: delete MySQL docker container
-  docker_container:
-    name: "mysql"
-    state: absent
-    force_kill: yes  

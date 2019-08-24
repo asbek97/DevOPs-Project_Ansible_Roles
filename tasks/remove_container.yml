@@ -1,7 +1,0 @@
----
-- name: Remove Active MySQL and Tomcat container
-  docker_container_info:
-    name: "{{ item }}"
-  register: result
-  notify: delete "{{ item }}" docker container if result.exists
-  loop: "{{ lookup('list',container_names) }}"

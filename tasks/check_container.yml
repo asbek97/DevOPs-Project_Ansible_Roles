@@ -1,0 +1,6 @@
+---
+- name: check required containers are running
+  docker_container_info:
+     name: "tomcat7"
+  register: result
+  notify: tomcat

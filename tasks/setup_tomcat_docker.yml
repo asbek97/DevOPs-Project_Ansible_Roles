@@ -6,7 +6,6 @@
     state: started
     ports:
       - "9050:8080"
-#  with_indexed_items:
-#    - "{{ images }}"
+    mount: "type:bind,source=/home/user/tomcat-bind,target=/opt/tomcat/webapps"
 
 
