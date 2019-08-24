@@ -1,0 +1,12 @@
+---
+- include_vars: "main.yml"
+#- include_tasks: "sys_pkg.yml"
+#- include_tasks: "docker_key.yml"
+#- include_tasks: "docker_repo.yml"
+#- include_tasks: "docker_install.yml"
+#- include_tasks: "docker_check.yml"
+#- include_tasks: "install_docker.yml"
+- include_tasks: "remove_container.yml"
+#- include_tasks: "tasks/setup_tomcat_docker.yml"
+#- include_tasks: "tasks/setup_MySQL_docker.yml"
+#- include_tasks: "tasks/retrieve_war_file.yml"

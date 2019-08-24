@@ -1,0 +1,24 @@
+---
+# handlers file for ansible-role-preporduction-setup
+- name: restart docker daemon service
+  service:
+          name: docker
+          state: restarted
+
+- name: delete tomcat docker container
+  docker_container:
+    name: "tomcat7"
+    state: stopped
+  notify: kill timcat container
+ 
+- name: kill tomcat container
+  docker_container:
+     name: "tomcat7"
+     state: absent
+     force_kill: yes
+
+- name: delete MySQL docker container
+  docker_container:
+    name: "mysql"
+    state: absent
+    force_kill: yes  

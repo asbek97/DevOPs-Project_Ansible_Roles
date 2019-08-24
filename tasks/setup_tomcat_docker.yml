@@ -1,0 +1,12 @@
+---
+- name: Create default containers 
+  docker_container:
+    name: "tomcat7"
+    image: "consol/tomcat-7.0"
+    state: started
+    ports:
+      - "9050:8080"
+#  with_indexed_items:
+#    - "{{ images }}"
+
+
