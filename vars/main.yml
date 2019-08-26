@@ -20,4 +20,4 @@ images:
   - 'mysql'
 tomcat_bind_source: '/home/user/tomcat-bind'
 tomcat_bind_target: '/opt/tomcat/webapps'
-warfile_url: 'http://172.31.12.84:9030/nexus/content/repositories/releases/com/pratian/prabhav1/{{ build_number }}/prabhav-1-{{ build_number }}.war'
+warfile_url: 'http://172.31.12.84:9030/nexus/content/repositories/releases/com/pratian/prabhav1/{{ build_number }}/prabhav1-{{ build_number }}.war'
