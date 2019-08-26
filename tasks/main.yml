@@ -1,5 +1,5 @@
 ---
-- include_vars: "main.yml"
+
 #- include_tasks: "sys_pkg.yml"
 #- include_tasks: "docker_key.yml"
 #- include_tasks: "docker_repo.yml"
