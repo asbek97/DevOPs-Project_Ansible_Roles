@@ -1,11 +1,13 @@
 ---
-- name: Create default containers 
+- name: Create tomcat containers 
   docker_container:
-    name: "tomcat7"
-    image: "consol/tomcat-7.0"
+    name: "{{ tomcat_container }}"
+    image: "{{ tomcat_image }}"
     state: started
     ports:
       - "9050:8080"
-    mount: "type:bind,source=/home/user/tomcat-bind,target=/opt/tomcat/webapps"
+    volumes: 
+      - "{{ tomcat_bind_source }}:{{ tomcat_bind_target }}"
+  when: tomcat_result.exists == false
 
 
