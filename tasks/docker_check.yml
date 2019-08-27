@@ -4,6 +4,5 @@
   register: dpkg_result
 - set_fact:
    docker_existence: dpkg_result
-- debug:
-    var: "{{ docker_existence }}.stdout"
+
 
