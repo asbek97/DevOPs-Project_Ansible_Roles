@@ -18,9 +18,8 @@ mysql_result: ''
 images:
   - 'consol/tomcat-7.0'
   - 'mysql'
-tomcat_bind_source: '/home/{{ ansible_user }}/tomcat-bind'
+tomcat_bind_source: '/home/root1/tomcat-bind'
 tomcat_bind_target: '/opt/tomcat/webapps'
-<<<<<<< HEAD
 warfile_url: 'http://172.31.12.84:9030/nexus/content/repositories/releases/com/pratian/prabhav1/"{{ build_number }}"/prabhav-1-"{{ build_number }}".war'
 
 
