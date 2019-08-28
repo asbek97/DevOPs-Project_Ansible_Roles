@@ -1,4 +1,5 @@
 ---
+username: 'user'
 # vars file for docker-preproduction
 preproduction-ip: localhost
 dependencies:
@@ -22,6 +23,6 @@ images:
   - 'mysql'
 tomcat_bind_source: '/home/{{ username }}/tomcat-bind'
 tomcat_bind_target: '/opt/tomcat/webapps'
-warfile_url: 'http://35.168.247.221:9030/nexus/content/repositories/releases/com/pratian/prabhav1/{{ build_number }}/prabhav1-{{ build_number }}.war'
+warfile_url: 'http://35.168.247.221:9030/nexus/content/repositories/releases/nexus/happytrip/prabhav-1/{{ build_number }}/prabhav-1-{{ build_number }}.war'
 
 
