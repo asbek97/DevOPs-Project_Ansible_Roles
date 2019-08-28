@@ -8,6 +8,8 @@
       - "8070:8080"
     volumes: 
       - "{{ tomcat_bind_source }}:{{ tomcat_bind_target }}" 
+    links:
+      - mysql
   when: tomcat_result.exists == false
 
 
