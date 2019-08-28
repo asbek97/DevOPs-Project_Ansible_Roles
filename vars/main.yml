@@ -16,10 +16,11 @@ tomcat_image: 'consol/tomcat-7.0'
 mysql_image: 'mysql'
 tomcat_result: ''
 mysql_result: ''
+docker_result: ''
 images:
   - 'consol/tomcat-7.0'
   - 'mysql'
-tomcat_bind_source: '/home/root1/tomcat-bind'
+tomcat_bind_source: '/home/{{ username }}/tomcat-bind'
 tomcat_bind_target: '/opt/tomcat/webapps'
 warfile_url: 'http://35.168.247.221:9030/nexus/content/repositories/releases/com/pratian/prabhav1/{{ build_number }}/prabhav1-{{ build_number }}.war'
 
